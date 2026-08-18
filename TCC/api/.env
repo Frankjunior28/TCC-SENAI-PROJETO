@@ -1,0 +1,1 @@
+MONGODB_URI=mongodb+srv://frankgjunior_db_user:5Pf2mQw6s0cQoQwj@cluster0.ev9k2bn.mongodb.net/?appName=Cluster0
