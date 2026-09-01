@@ -1,32 +1,15 @@
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
-const produtoSchema = new mongoose.Schema({
-  // Identificação Básica
-  nome: { type: String, required: true },
-  sku: { type: String, required: true, unique: true },
-  descricao: { type: String },
-  categoria: { type: String, required: true }, // Ex: "Sofás", "Mesas"
-  
-  // Preço e Estoque
-  preco: { type: Number, required: true },
-  precoPromocional: { type: Number },
-  estoque: { type: Number, required: true, default: 0 },
-  
-  // Especificações Essenciais do Móvel (em cm)
-  dimensoes: {
-    altura: { type: Number, required: true },
-    largura: { type: Number, required: true },
-    profundidade: { type: Number, required: true }
+const produtoSchema = new mongoose.Schema(
+  {
+    nome: { type: String, required: true },
+    preco: { type: Number, required: true },
+    descricao: { type: String },
+    quantidade: { type: Number, default: 0 },
   },
-  pesoKg: { type: Number },
-  cor: { type: String },
-  material: { type: String }, // Ex: "MDF", "Madeira Maciça"
-  
-  // Mídia e Status
-  imagens: [{ type: String }], // URLs das fotos
-  ativo: { type: Boolean, default: true }
-}, {
-  timestamps: true
-});
+  { timestamps: true }
+);
 
-module.exports = mongoose.model('Produto', produtoSchema);
+const Produto = mongoose.model("produtos", produtoSchema);
+
+export default Produto;
