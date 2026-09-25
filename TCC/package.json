@@ -1,0 +1,16 @@
+{
+  "name": "tcc-casa-aconchego",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Mercado de móveis Casa Aconchego — frontend em React (Vite) + API em Node.js (Express + MongoDB).",
+  "scripts": {
+    "install:all": "npm --prefix api install && npm --prefix ui install",
+    "dev:api": "npm --prefix api run dev",
+    "dev:ui": "npm --prefix ui run dev",
+    "build": "npm --prefix ui run build",
+    "start": "npm --prefix api start",
+    "migrar": "npm --prefix api run migrar",
+    "fotos": "npm --prefix api run fotos",
+    "banco": "npm --prefix api run banco"
+  }
+}

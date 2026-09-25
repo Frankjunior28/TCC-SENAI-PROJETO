@@ -1,10 +1,14 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "migrar": "node src/migrar.js",
+    "fotos": "node src/sincronizar-fotos.js",
+    "banco": "node inspecionar-banco.mjs"
   },
   "keywords": [],
   "author": "",

@@ -1,3 +1,9 @@
+/**
+ * UI  →  src/App.css — estilos AUXILIARES (herdados do template Vite).
+ * Contém classes pontuais como .counter e variações de .hero.
+ * A estilização principal da loja está toda em src/index.css.
+ */
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
